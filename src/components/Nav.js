@@ -173,11 +173,11 @@ class Nav extends Component {
             <Navigation>
                 <div className="logo">
                     <Link to="/">
-                        <p>React Responsive Navigation</p>
+                        <p>Polular Móveis</p>
                         <em>
                             <div className="letterhead">
-                                <span className="name">kentorry</span>
-                                <span className="gray">.io</span>
+                                <span className="name">Qualidade em Primeiro </span>
+                                <span className="gray">Lugar</span>
                             </div>
                         </em>
                     </Link>
@@ -190,13 +190,13 @@ class Nav extends Component {
                     />
                     <ul className={`collapsed ${isExpanded ? "is-expanded" : ""}`}>
                         <NavLink activeClassName="active" to="/">
-                            <li>home</li>
+                            <li>Home</li>
                         </NavLink>
                         <NavLink activeClassName="active" to="/about">
-                            <li>about</li>
+                            <li>Sobre</li>
                         </NavLink>
                         <NavLink activeClassName="active" to="/contact">
-                            <li>contact</li>
+                            <li>Contato</li>
                         </NavLink>
                     </ul>
                 </nav>

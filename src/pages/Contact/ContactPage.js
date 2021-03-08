@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 const ContactPage = () => (
     <Fragment>
-        <h1>Contact</h1>
+        <h1>Contato</h1>
     </Fragment>
 );
 
