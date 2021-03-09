@@ -52,11 +52,7 @@ const HomePage = () => (
                 </div>
               </div>
             </div>
-          </section>
 
-          {/* <!-- about --> */}
-          <section id="about">
-            <h1>About</h1>
             <div className="row">
               <div
                 className="col-xs-12 col-sm-6 col-md-8"
@@ -81,11 +77,7 @@ const HomePage = () => (
                 </div>
               </div>
             </div>
-          </section>
 
-          {/* <!-- contact --> */}
-          <section id="contact">
-            <h1>Contact</h1>
             <div className="row">
               <div
                 className="col-xs-12 col-sm-6 col-md-6"
