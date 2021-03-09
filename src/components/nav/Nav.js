@@ -154,55 +154,58 @@ const Navigation = styled.header`
 `;
 
 class Nav extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isExpanded: false
-        };
-    }
-    handleToggle(e) {
-        e.preventDefault();
-        this.setState({
-            isExpanded: !this.state.isExpanded
-        });
-    }
-    render() {
-        const { isExpanded } = this.state;
+  constructor(props) {
+    super(props);
+    this.state = {
+      isExpanded: false
+    };
+  }
+  handleToggle(e) {
+    e.preventDefault();
+    this.setState({
+      isExpanded: !this.state.isExpanded
+    });
+  }
+  render() {
+    const { isExpanded } = this.state;
 
-        return (
-            <Navigation>
-                <div className="logo">
-                    <Link to="/">
-                        <p>Polular Móveis</p>
-                        <em>
-                            <div className="letterhead">
-                                <span className="name">Qualidade em Primeiro </span>
-                                <span className="gray">Lugar</span>
-                            </div>
-                        </em>
-                    </Link>
-                </div>
-                <nav className="nav">
-                    <i
-                        className="fa fa-bars"
-                        aria-hidden="true"
-                        onClick={e => this.handleToggle(e)}
-                    />
-                    <ul className={`collapsed ${isExpanded ? "is-expanded" : ""}`}>
-                        <NavLink activeClassName="active" to="/">
-                            <li>Home</li>
-                        </NavLink>
-                        <NavLink activeClassName="active" to="/about">
-                            <li>Sobre</li>
-                        </NavLink>
-                        <NavLink activeClassName="active" to="/contact">
-                            <li>Contato</li>
-                        </NavLink>
-                    </ul>
-                </nav>
-            </Navigation>
-        );
-    }
+    return (
+      <Navigation>
+        <div className="logo">
+          <Link to="/">
+            <p>Polular Móveis</p>
+            <em>
+              <div className="letterhead">
+                <span className="name">Qualidade em Primeiro </span>
+                <span className="gray">Lugar</span>
+              </div>
+            </em>
+          </Link>
+        </div>
+        <nav className="nav">
+          <i
+            className="fa fa-bars"
+            aria-hidden="true"
+            onClick={e => this.handleToggle(e)}
+          />
+          <ul className={`collapsed ${isExpanded ? "is-expanded" : ""}`}>
+            <NavLink activeClassName="active" to="/product">
+              <li>Produtos</li>
+            </NavLink>
+            <NavLink activeClassName="active" to="/about">
+              <li>Sobre</li>
+            </NavLink>
+            <NavLink activeClassName="active" to="/contact">
+              <li>Contato</li>
+            </NavLink>
+            <NavLink activeClassName="active" to="/">
+              <li>Home</li>
+            </NavLink>
+          </ul>
+        </nav>
+      </Navigation>
+    );
+  }
 }
 
 export default Nav;

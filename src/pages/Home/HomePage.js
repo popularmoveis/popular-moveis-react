@@ -1,5 +1,8 @@
 import React, { Fragment } from "react";
 import AOS from 'aos';
+import Carousel from '../../components/Categoria/Carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 import 'aos/dist/aos.css';
 
 import "./HomePage.css";
@@ -10,7 +13,7 @@ AOS.init();
 const HomePage = () => (
   <div>
     <Fragment>
-      <h1>Home</h1>
+      <h1> </h1>
       <div className="container text-center">
         {/* <!-- main --> */}
         <main>
@@ -26,7 +29,7 @@ const HomePage = () => (
                 data-aos-easing="ease-in-out-cubic"
               >
                 <div className="well well-lg">
-                  <h1>1</h1>
+                  <Carousel />
                 </div>
               </div>
               <div
@@ -101,21 +104,12 @@ const HomePage = () => (
                   <h1>7</h1>
                 </div>
               </div>
+
             </div>
           </section>
         </main>
       </div>
     </Fragment>
-
-    {/* WhatsApp icon */}
-    <a
-      href="https://wa.me/2348100000000"
-      class="whatsapp_float"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <i class="fa fa-whatsapp whatsapp-icon"></i>
-    </a>
   </div>
 );
 
