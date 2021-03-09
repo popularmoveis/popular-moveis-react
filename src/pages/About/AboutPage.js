@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import Footer from '../../components/footer/Footer'
 
 const AboutPage = () => (
     <>
