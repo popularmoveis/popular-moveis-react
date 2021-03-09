@@ -5,7 +5,8 @@ import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faFacebook,
-    faInstagram
+    faInstagram,
+    faWhatsapp
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
@@ -21,6 +22,12 @@ export default function Footer() {
                     className="instagram social">
                     <FontAwesomeIcon icon={faInstagram} size="2x" />
                 </a>
+
+                <a href="https://www.instagram.com/popularmoveiis/"
+                    className="whatsapp social">
+                    <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+                </a>
+
             </p>
         </div>
     );
